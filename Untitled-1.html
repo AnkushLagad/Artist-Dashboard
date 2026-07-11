@@ -1,0 +1,121 @@
+<!DOCTYPE htlm>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initiol-scale=1.0">
+
+    <title>
+        My  first web page 
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff,#92fe9d);
+    background-size:400% 400%;
+    animation:gradient 10s ease infinite;
+    color:white;
+    text-align:center;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.hero{
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff5722;
+}
+</style>
+
+</head>
+    </head>
+    <body ></body>
+     <header>
+        <h1>creative artist</h1>
+        <P>Painting | Sketching | Digital Art</P>
+    </header>
+    <nav>
+        <a href="#">Home </a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section id="Home" class="Hero">
+        <h1> Wellcome to my art world</h1>
+        <p>discover unique painting and digital artwork </p>
+        <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">view gallery</button>
+    </section>
+    <section id="Gallery">
+        <h2>Gallery</h2>
+
+
+
+        <div class="card">
+            <img src="art1.jpg" alt="artwork">
+            <h3 >Abstract Painting</h3>
+        </div>
+
+
+
+        <div class="card">
+            <img src="art2.jpg" alt="artwork">
+            <h3 >Natural Sketching</h3>
+        </div>
+
+
+
+        <div class="card">
+            <img src="art3.jpg" alt="artwork">
+            <h3 >Digital Illustrtion</h3>
+        </div>
+    </section>
+    <section id="About">
+        <h2>About me</h2>
+        <p> Hello ! i am a passionation artist who create pointings,
+            Sketches  and digital Illustrtion.
+            My goal is inspire peaple throught creativity.
+        </p>
+        </section>
+        <section id="Contact">
+            <h2>contact</h2>
+            <P>Email:abc@gmail.com</P>
+            <p>Instagram:@abc</p>
+            <p>Phone:123456789</p>
+        </section>
+    <footer>
+        <p> 2026 creative Artist Portfollio</p>
+    </footer>
+    </body>
+</html>
